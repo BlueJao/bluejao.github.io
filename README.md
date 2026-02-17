@@ -4,5 +4,5 @@
     <DIV> 
     Welcome to my WWWeb Wrold!
     </DIV>
-  </MARQUEE>MARQUEE>
+  </MARQUEE>
 </HTML>
