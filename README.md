@@ -1,7 +1,8 @@
 # bluejao.github.io
 <HTML> 
-<DIV> 
-Welcome to my WWWeb Wrold!
-</DIV>
-
+  <MARQUEE>
+    <DIV> 
+    Welcome to my WWWeb Wrold!
+    </DIV>
+  </MARQUEE>MARQUEE>
 </HTML>
