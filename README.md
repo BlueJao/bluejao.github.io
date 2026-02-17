@@ -2,7 +2,7 @@
 <HTML> 
   <MARQUEE>
     <DIV> 
-    Welcome to my WWWeb Wrold!
+    Welcome to my WWWeb World!
     </DIV>
   </MARQUEE>
 </HTML>
