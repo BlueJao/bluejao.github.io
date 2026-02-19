@@ -1,7 +1,10 @@
 body {
-  background-color: #2d67b2;
+  background-color: #000000;
 }
-
+big {
+  font-size: 40px;
+  color: #2d67b2;
+}
 shadowbox {
   width: 15em;
   border: 1px solid #333333;
