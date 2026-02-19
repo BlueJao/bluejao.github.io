@@ -1,24 +1,24 @@
-body {
+.body {
   background-color: #FFFFFF;
 }
-big {
+.big {
   font-size: 40px;
   color: #2d67b2;
 }
-shadowbox {
+.shadowbox {
   width: 15em;
   border: 1px solid #333333;
   box-shadow: 8px 8px 5px #444444;
   padding: 8px 12px;
   background-image: linear-gradient(180deg, white, #dddddd 40%, #cccccc);
 }
-marquee {
+.marquee {
 	border: 2px solid blue ;
 	display: flex ;
 	overflow: hidden ;
 	white-space: nowrap ;
 }
-marquee__item {
+.marquee__item {
 	animation-duration: 4s ;
   	animation-iteration-count: infinite ;
 	animation-name: marquee-content ;
@@ -26,7 +26,7 @@ marquee__item {
 	padding: 5px 15px 5px 15px ;
 	color: #2d67b2;
 }
-marquee:hover .marquee__item {
+.marquee:hover .marquee__item {
 	animation-play-state: paused ;
 }
 
