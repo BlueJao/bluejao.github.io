@@ -86,8 +86,9 @@
   }
 }
 .content-overlay {
-  position: relative; /* Stays in the flow but allows z-index */
-  z-index: 2;         /* Higher layer than the grid */
+	text-align: right;
+	position: relative; /* Stays in the flow but allows z-index */
+	z-index: 2;         /* Higher layer than the grid */
   text-align: center;
   color: black;
   font-family: sans-serif;
