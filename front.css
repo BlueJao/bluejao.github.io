@@ -42,7 +42,7 @@
   top: 0;
   left: 0;
   width: 100px;
-  height: 100vh;
+  height: 440vh;
   
   /* Replace with your image URL */
   background-image: url('/art-summary.png');
@@ -61,7 +61,7 @@
   top: 0;
   left: 0;
   width: 100px;
-  height: 100vh;
+  height: 300vh;
   
   /* Replace with your image URL */
   background-image: url('/art-summary.png');
