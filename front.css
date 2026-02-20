@@ -59,9 +59,9 @@
 .infinite-diagonal-lr {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 200vw;
   width: 100px;
-  height: 300vh;
+  height: 600vh;
   
   /* Replace with your image URL */
   background-image: url('/art-summary.png');
