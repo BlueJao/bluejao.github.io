@@ -89,7 +89,7 @@
   position: relative; /* Stays in the flow but allows z-index */
   z-index: 2;         /* Higher layer than the grid */
   text-align: center;
-  color: white;
+  color: black;
   font-family: sans-serif;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Helps text pop against moving images */
   pointer-events: none; /* Allows clicks to "pass through" to the background if needed */
