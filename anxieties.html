@@ -9,5 +9,96 @@
          I am so scared about the future! This fucking sucks! Predict my future so I can delegate the responsibility to you...
       </div>
     </div>
+    <div class="content-overlay">
+      <h2>Select Your Path</h2>
+      
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" class="route-toggle" data-value="1">
+          <span class="slider"></span> Option 1
+        </label>
+        <label class="switch">
+          <input type="checkbox" class="route-toggle" data-value="2">
+          <span class="slider"></span> Option 2
+        </label>
+        <label class="switch">
+          <input type="checkbox" class="route-toggle" data-value="4">
+          <span class="slider"></span> Option 3
+        </label>
+        <label class="switch">
+          <input type="checkbox" class="route-toggle" data-value="8">
+          <span class="slider"></span> Option 4
+        </label>
+      </div>
+      <button type="button" id="redirect-btn">bingus</button>
+    </div>
+
+
+    <script>
+      // 1. Select the elements
+      const redirectBtn = document.getElementById('redirect-btn');
+      const pathTitle = document.getElementById('path-title');
+      const toggles = document.querySelectorAll('.route-toggle');
+    
+      // 2. Define the path names (for the UI) and URLs (for the redirect)
+      // You can fill in all 16 combinations here
+      const pathData = {
+        0:  { name: "None Selected", url: "home.html" },
+        1:  { name: "The Lone Wanderer", url: "path1.html" },
+        2:  { name: "The Quiet Observer", url: "path2.html" },
+        3:  { name: "The Dynamic Duo", url: "path3.html" },
+        4:  { name: "The Third Eye", url: "path4.html" },
+        8:  { name: "The Foundation", url: "path8.html" },
+        15: { name: "The Ultimate Bingus", url: "bingus-prime.html" }
+        // Add others: 5, 6, 7, 9, 10, 11, 12, 13, 14
+      };
+    
+      // 3. Function to calculate current binary sum
+      function getCombinationSum() {
+        let sum = 0;
+        toggles.forEach(toggle => {
+          if (toggle.checked) {
+            sum += parseInt(toggle.getAttribute('data-value'));
+          }
+        });
+        return sum;
+      }
+    
+      // 4. Update the UI in real-time
+      function updateUI() {
+        const currentSum = getCombinationSum();
+        const data = pathData[currentSum];
+        
+        // Update Text
+        pathTitle.innerText = "Path: " + (data ? data.name : "Combination " + currentSum);
+        
+        // Optional: Visual feedback if all selected
+        if (currentSum === 15) {
+          pathTitle.style.color = "#ff4757";
+          pathTitle.style.textShadow = "0 0 10px rgba(255, 71, 87, 0.8)";
+        } else {
+          pathTitle.style.color = "white";
+          pathTitle.style.textShadow = "none";
+        }
+      }
+    
+      // 5. Handle the Redirect
+      redirectBtn.addEventListener('click', () => {
+        const currentSum = getCombinationSum();
+        const data = pathData[currentSum];
+        
+        if (currentSum === 0) {
+          alert("Please select at least one toggle to begin your journey!");
+        } else {
+          const destination = data ? data.url : "default.html";
+          window.location.href = destination;
+        }
+      });
+    
+      // 6. Listen for toggle changes
+      toggles.forEach(toggle => {
+        toggle.addEventListener('change', updateUI);
+      });
+    </script>
   </BODY>
 </HTML>
