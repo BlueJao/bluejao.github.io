@@ -16,10 +16,10 @@
 	border: 2px solid #2d67b2;
 	display: flex;
 	overflow: hidden;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 .marquee__item {
-	animation-duration: 4s;
+	animation-duration: 5s;
   	animation-iteration-count: infinite;
 	animation-name: marquee-content;
 	animation-timing-function: linear;
@@ -37,9 +37,9 @@
 		*/
 @keyframes marquee-content {
   from {
-		transform: translateX( 100% );
+		transform: translateX( 1000% );
 	}
 	to {
-		transform: translateX( -200% );
+		transform: translateX( -100% );
 	}
 }
