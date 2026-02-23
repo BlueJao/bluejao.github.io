@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <link rel="stylesheet" href="./outcome.css">
+  </HEAD>
+  <BODY class = "body">
+    <div style="text-align: center;">
+      <iframe
+          width="200"
+          height="200"
+          src="https://www.youtube.com/embed/JeucohIa5LQ?autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allowfullscreen>
+      </iframe>
+    </div>
+  </BODY>
+</HTML>
